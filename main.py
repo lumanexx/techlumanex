@@ -9,25 +9,25 @@ JOBS = [
     'id': 1,
     'title': 'Frontend Engineer',
     'location': 'Lagos, Nigeria',
-    'salary': '#500.000'
+    'salary': '$500.000'
   },
   {
     'id': 2,
     'title': 'Data Engineer',
     'location': 'Remote',
-    'salary': '#500.000'
+    'salary': '$500.000'
   },
   {
     'id': 3,
     'title': 'UI/UX Designer',
     'location':'Abuja, Nigeria',
-    'salary': '#500.000'
+    'salary': '$500.000'
   },
   {
     'id': 4,
     'title': 'Backend Engineer',
     'location': 'Portharcourt, Nigeria',
-    'salary': '#500.000'
+    'salary': '$500.000'
   }
 ]
 @app.route("/")
