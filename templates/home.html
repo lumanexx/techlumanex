@@ -10,21 +10,29 @@
         height: 200px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
              }
       </style>
   </head>
-    <body>
+    <body style="background: rgb(auto,auto,auto);">
+      {% include 'nav.html' %}
+      <img class="img-fluid" id="banner" src = "https://techlumanex.repl.co/static/desola.jpg">
       <div class="container">
         <h1 class="text-center mt-4 mb-4">WE ARE HIRING</h1>
-        <img class="img-fluid" id="banner" src = "https://techlumanex.repl.co/static/ice.jpg">
-        <h2 class="text-center mt-4 mb-4">TECHLUMANEX</h2> 
-      <p class="lead">
+        <div class="row" style="margin-bottom: 16px;">
+          <div class="col-md-6">
+        <p class="lead">
 We are excited to announce that techlumanex is currently seeking talented software engineers to join our team. As a software engineer, you will play a key role in building our web applications.<br>
   
 At techlumanex, we are committed to providing our employees with a supportive and collaborative work environment that encourages personal and professional growth. We value creativity, innovation, and hard work, and we believe that our team members are our most valuable asset.<br>
   
 To be considered for this position, you should have good knowledge of building web/mobile applications. In addition, we are looking for someone who is team player, and who shares our commitment.<br>
-  
+        </p>
+        </div>
+          <div class="-none d-md-block col-6">
+          <img src="/static/ice.jpg" style=" height:320px; border-radius: 4px">
+          </div>
+        </div>
   <h2 class="text-center mt-2 mb-4">Job openings</h2>
   <div>
     {% for job in jobs %}
@@ -32,9 +40,10 @@ To be considered for this position, you should have good knowledge of building w
     {% endfor %}
   </div>
   <div class="text-center">
-  <button class="btn btn-secondary btn-lg">Contact us</button>
-    <p class="mt-4 mb-4">Copyright 2023, techlumanex</p>
-  </div>
+  <a class="btn btn-secondary btn-lg" href="mailto:techlumanex@gmail.com?subject=About%20job%20opening&body=My%20Name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%20%3A%20%3Center%20questions%20here%3E%0D%0A%0D%0A">Contact us</a>
+</div>
+      </div>
+    {% include 'footer.html' %}
     
   </body>
 
